@@ -1,0 +1,27 @@
+.section_container{
+    width: 80%;
+    margin: 0 auto;
+}
+.features_grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+}
+.feature_card{
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.feature_card h3{
+    margin-bottom: 15px;
+    color: #333;
+}
+.feature_card p{
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}

@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="frontend/styles/main.css?v=2">
+    <link rel="stylesheet" href="frontend/styles/features.css?v=2">
+    <link rel="stylesheet" href="frontend/styles/how_it_works_section.css?v=2">
     <link rel="stylesheet" href="frontend/styles/media_query.css">
     <link rel="stylesheet" href="frontend/styles/utils.css">
     <title>Digital Record Management System</title>
@@ -17,6 +19,7 @@
     include("frontend/layout/herosection.php");
     include("frontend/layout/about_section.php");
     include("frontend/layout/features_section.php");
+    include("frontend/layout/how_it_works_section.php");
     include("frontend/layout/services_section.php");
     include("frontend/layout/contact_section.php");
     ?>

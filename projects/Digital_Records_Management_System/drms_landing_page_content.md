@@ -7,8 +7,6 @@ Headline: Organize. Access. Secure.
 Subheadline: Manage your records effortlessly with our all-in-one digital record management system. Say goodbye to clutter and lost files.
 CTA Buttons: Get Started Free, Request a Demo
 
-<!-- well done -->
-hi
 ---
 
 **2. Features Section**
