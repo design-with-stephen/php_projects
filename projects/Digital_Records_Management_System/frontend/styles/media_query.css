@@ -1,0 +1,44 @@
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+/* Small devices (≥576px) */
+@media (max-width: 576px) {
+  .navbar{
+    width: 100%;
+  }
+  .link{
+    display: none;
+  }
+  /* .nav_menu{
+    display: flex;
+} */
+}
+/* Small devices (≥576px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .navbar{
+    width: 100%;
+  }
+  .link{
+    display: none;
+  }
+  /* .nav_menu{
+    display: flex;
+} */
+}
+
+/* Medium devices – Tablets (≥768px) */
+@media (min-width: 768px) {
+  .navbar{
+    width: 90%;
+  }
+}
+
+/* Large devices – Laptops (≥992px) */
+@media (min-width: 992px) {
+  
+}
+
+/* Extra large devices – Desktops (≥1200px) */
+@media (min-width: 1200px) {
+  
+}
