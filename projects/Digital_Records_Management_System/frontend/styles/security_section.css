@@ -1,0 +1,22 @@
+.security_content_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.security_section{
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+}
+
+.security_list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+list-style: decimal-leading-zero;
+}
+
+.security_item{
+    color: #616060;
+}

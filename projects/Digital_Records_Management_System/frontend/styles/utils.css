@@ -11,7 +11,7 @@
   --color-bg: #ffffff;
   --color-surface:rgb(244, 255, 255);
   --text-color1:#1d1d1d;
-  --text-color2:rgb(56, 56, 56);
+  --text-color2:rgb(134, 133, 133);
   --text-color3: #ffffff;
   --color-text: rgb(0, 75, 75);
   --link-color:rgb(0, 75, 75);
@@ -102,11 +102,15 @@
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
+.title{
+   font-weight: 500;
+   font-size: 2.5rem;
+}
 
 .section_title{
    font-weight: 400;
    color: rgb(0, 138, 138);
+   font-size: 4rem;
 }
 .section_subtitle{
    color:#797979;
@@ -119,4 +123,14 @@ h3{
 
 p{
    color: var(--text-color1);
+}
+.hx3{
+   font-size: 6rem;
+}
+.hx2{
+   font-size: 4rem;
+}
+.description{
+   color: #d6d6d6;
+   font-size: 0.95rem;
 }

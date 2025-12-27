@@ -1,27 +1,33 @@
-// creating a function to hold the observer
+// Scroll Animation with Intersection Observer
+function scrollAnimation({
+	selector = '.animate',
+	showClass = 'show',
+	delayStep = 150,
+	threshold = 0.2
+} = {}) {
+	const elements = document.querySelectorAll(selector);
+	const observer = new IntersectionObserver(
+		(entries) => {
 
-function animationObserver(className, classToAdd) {
-	// create an Observer
-	const observer = new IntersectionObserver((entries) => {
-		
-        entries.forEach((entry) => {
+			entries.forEach((entry) => {
 
-			if (entry.isIntersecting) {
-				entry.target.classList.add(classToAdd);
-			} else {
-				entry.target.classList.remove(classToAdd);
-			}
+				if (entry.isIntersecting) {
+					
+					const index = [...elements].indexOf(entry.target);
+					entry.target.style.transitionDelay = `${index * delayStep}ms`;
+					entry.target.classList.add(showClass);
 
-		});
-	});
-	
-	const hiddenElements = document.querySelectorAll(className);
+					observer.unobserve(entry.target);
+				}
+			});
+		},
+		{ threshold }
+	);
 
-	hiddenElements.forEach((el) => {
-		observer.observe(el);
-	});
+	elements.forEach(el => observer.observe(el));
 }
-// calling the function for different section animations on the page/ website
-animationObserver('toBottom',"showFromBottom");
-animationObserver('toLeft',"showFromLeft");
-animationObserver('toRight',"showFromRight");
+
+// INIT
+scrollAnimation();
+
+
