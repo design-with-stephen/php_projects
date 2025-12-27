@@ -1,5 +1,5 @@
-<section class="about_section section tabContent">
+<!-- <section class="about_section">
    <div class="image_wrap">
     <img src="frontend/public/img4.jpg" alt="">
    </div>
-</section>
+</section> -->

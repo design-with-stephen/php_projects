@@ -1,4 +1,4 @@
-<section class="features_section section tabContent">
+<section class="features_section section">
     <div class="section_container">
         <div class="features_header">
             <h2 class="section_title">Key Features</h2>

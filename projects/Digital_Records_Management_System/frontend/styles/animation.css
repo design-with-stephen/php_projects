@@ -1,0 +1,32 @@
+.toBottom,.toLeft,.toRight{
+    opacity: 0;
+    transition: 0.5s ease all;
+}
+
+.toBottom{
+    transform: translateY(-100px);
+}
+
+.toLeft{
+    transform: translateX(-100px);
+}
+
+.toRight{
+    transform: translateX(100px);
+}
+
+.showFromBottom,.showFromLeft,.showFromRight{
+    opacity: 1;
+}
+
+.showFromBottom{
+    transform: translateY(0);
+}
+
+.showFromLeft{
+    transform: translateX(0);
+}
+
+.showFromRight{
+    transform: translateX(0);
+}
