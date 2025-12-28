@@ -42,11 +42,7 @@
     color: var(--headline-color);
     font-weight: 400;
 }
-.step_card p{
-    color: #666;
-    font-size: 14px;
-    line-height: 1.5;
-}
+
 .image_warp{
     flex: 1;
     height: 75vh;
@@ -58,7 +54,7 @@
     /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
 }
 .how_it_works_header{
-    text-align: center;
+    text-align: start;
     margin-bottom: 40px;
 }
 

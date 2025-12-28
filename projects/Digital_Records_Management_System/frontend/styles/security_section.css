@@ -14,9 +14,13 @@
     flex-direction: column;
     gap: 30px;
     flex: 1;
-list-style: decimal-leading-zero;
+    list-style: decimal-leading-zero;
 }
 
 .security_item{
     color: #616060;
+}
+.security_item strong{
+    font-weight: 400;
+    color: rgb(0, 69, 69);
 }

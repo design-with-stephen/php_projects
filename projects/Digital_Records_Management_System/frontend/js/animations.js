@@ -2,8 +2,8 @@
 function scrollAnimation({
 	selector = '.animate',
 	showClass = 'show',
-	delayStep = 150,
-	threshold = 0.2
+	delayStep = 100,
+	// threshold = 0.2
 } = {}) {
 	const elements = document.querySelectorAll(selector);
 	const observer = new IntersectionObserver(
@@ -21,7 +21,7 @@ function scrollAnimation({
 				}
 			});
 		},
-		{ threshold }
+		// { threshold }
 	);
 
 	elements.forEach(el => observer.observe(el));

@@ -1,0 +1,36 @@
+
+.contact_section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-surface);
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+}
+.section_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+}
+.form_header{
+    margin-bottom: 2rem;
+}
+.input_field,#messageBox{
+    width: 100%;
+    padding: 18px;
+    border-width: 2px;
+    border-color: rgb(135, 135, 135);
+    border-radius: 5px;
+    background: transparent;
+}
+
+#messageBox{
+    height:  10rem;
+    resize: none;
+}
+.btn_wrapper{
+    display: flex;
+    justify-content: end;
+}
