@@ -5,7 +5,8 @@ class database{
     private $username= "root";
     private $password ="";
     private $dbname= "crudDB";
-
+     
+    // declaring protected connection variable
     protected $conn;
     public function __construct(){
         $this->conn = new mysqli(
