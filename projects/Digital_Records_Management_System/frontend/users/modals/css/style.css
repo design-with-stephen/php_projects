@@ -129,7 +129,9 @@ label{
 .menu-item {
   width: 100%;
 }
-
+.menu-item a i,.menu-item a span{
+    color: #1e1e1e;
+}
 .menu-item a,
 .dropdown-toggle {
   width: 100%;
@@ -155,7 +157,7 @@ label{
   font-size: 16px;
   min-width: 20px;
 }
-.menu-item button i{
+.menu-item button i,.menu-item a i{
     color: #008690;
 }
 /* Dropdown */
