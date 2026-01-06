@@ -37,3 +37,60 @@
     justify-content: center;
     align-items: center;
 }
+
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+/* Small devices (≥576px) */
+@media (max-width: 576px) {
+   
+  .success_stories_section{
+    height: fit-content;
+    
+}
+
+.success_stories_container{
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+.success_stories_grid{
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+}
+.image_wrapper{
+    width: 100%;
+}
+
+.story_card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.story_author{
+    color: rgb(0, 74, 74);
+}
+.btn_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+/* Small devices (≥576px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  
+}
+
+/* Medium devices – Tablets (≥768px) */
+@media (min-width: 768px) {
+  
+}
+
+/* Large devices – Laptops (≥992px) */
+@media (min-width: 992px) {
+  
+}
+
+/* Extra large devices – Desktops (≥1200px) */
+@media (min-width: 1200px) {
+  
+}

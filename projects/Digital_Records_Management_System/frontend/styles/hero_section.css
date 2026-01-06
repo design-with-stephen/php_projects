@@ -26,16 +26,11 @@ img {
 	border-radius: 20px;
 }
 
-.content {
+.hero-content {
 	text-align: center;
 	margin-top: 4rem;
 }
-.content p {
-	width: 70%;
-	font-size: 0.95rem;
-	color: var(--text-color2);
-	margin: 0 auto;
-}
+
 .title {
 	font-weight: 400;
 	font-size: 1.8rem;
@@ -56,21 +51,15 @@ img {
 		height: 90vh;
 		gap: 3rem;
 	}
-	.title {
-		font-weight: 400;
-		font-size: 1.2rem;
-	}
-    .content{
+	
+    .hero-content{
         margin-top: 8rem;
     }
-	.content p {
-		width: 95%;
-		font-size: 0.95rem;
-	}
+	
 	.image_wrap {
 		width: 95%;
-		height: 300px;
-        margin-top: 6rem;
+		height: 500px;
+        margin-top: 1.5rem;
 	}
 }
 /* Small devices (≥576px) */

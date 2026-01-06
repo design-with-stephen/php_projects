@@ -1,5 +1,5 @@
 
-.contact_section{
+.login_container{
     width: 100%;
     height: fit-content;
     display: flex;
@@ -10,17 +10,10 @@
     padding-top: 2rem;
 }
 
-.section_grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 2.5rem;
-}
-
 .form_header{
     margin-bottom: 2rem;
 }
-
-.input_field,#messageBox{
+.input_field{
     width: 100%;
     padding: 18px;
     border-width: 2px;
@@ -29,31 +22,51 @@
     background: transparent;
 }
 
-#messageBox{
-    height:  10rem;
-    resize: none;
-}
+.input_controls
+
 .btn_wrapper{
     display: flex;
     justify-content: end;
 }
-
-.group_fields{
-    display: flex;
-    gap: 0.4rem;
-
+.login_btn{
+    width: 100%;
+    padding: 1.2rem;
 }
-.group_fields .field select{
-    width: 80px;
-    padding: 8px;
-    border-width: 2px;
-    border-color: rgb(135, 135, 135);
-    border-radius: 5px;
-    background: transparent;
-    padding-bottom: 18px;
-    padding-top: 18px;
+
+.login_btn{
+
+	border: 1px solid var(--btn-bg);
+   background:rgb(0, 74, 74);
+	border-radius: 5px;
+	margin-top: 0.5rem;
+	color:  rgb(253, 253, 253);
+	cursor: pointer;
+	transition: 0.5s ease all;
+    font-size: 18px;
+
+   &:hover{
+      background-color: #003f4f;
+      color: #d6d6d6;
+      transform: scale(1.2);
+   }
+}
+
+
+.register_wrap{
+    margin-top: 2rem;
+    text-align: center;
     
 }
+.register_wrap a , .forgotpaasword_wrap a{
+    color: #525252;
+}
+label{
+    color: #525252;
+}
+.register_wrap a em{
+    color: #00928b;
+}
+
 /* =========================
    MEDIA QUERIES
    ========================= */

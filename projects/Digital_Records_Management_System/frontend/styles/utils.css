@@ -103,10 +103,12 @@
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
+a{
+   text-decoration: none;
+}
 .title{
    font-weight: 500;
-   font-size: 2.5rem;
+   font-size: 3.8rem;
 }
 
 .section_title{
@@ -142,11 +144,11 @@ p{
 
 .description{
    color: #d6d6d6;
-   font-size: 0.95rem;
+   font-size: 18px;
 }
-.step_description{
+.tagline_description,.step_description,.feature_description{
     color: #666;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.5;
 }
 .ctn {
@@ -158,6 +160,7 @@ p{
 	color: var(--btn-color);
 	cursor: pointer;
 	transition: 0.5s ease all;
+   font-size: 18px;
 
 	&:hover {
 		background-color: var(--hovered-link-color);
@@ -169,10 +172,11 @@ p{
 	background-color: var(--btn-bg);
 	border: none;
 	border-radius: 5px;
-	margin-top: 0.9rem;
+	margin-top: 0.5rem;
 	color: var(--btn-color);
 	cursor: pointer;
 	transition: 0.5s ease all;
+   font-size: 18px;
 
 	&:hover {
 		background-color: var(--hovered-link-color);
@@ -188,10 +192,72 @@ p{
 	color:  rgb(0, 74, 74);
 	cursor: pointer;
 	transition: 0.5s ease all;
+   font-size: 18px;
 
    &:hover{
       background-color: #003f4f;
       color: #d6d6d6;
       transform: scale(1.2);
    }
+}
+.section_container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+button a{
+   text-decoration: none;
+   color: #f6f6f6;
+   font-size: 18px;
+}
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+/* Small devices (≥576px) */
+@media (max-width: 576px) {
+   .title{
+   font-size: 1.8rem;
+}
+  .section_container{
+    width: 98%;
+    margin: 0 auto;
+}
+.section_container{
+    padding: 1.2rem;
+}
+.hx3{
+   font-size: 3rem;
+}
+.hx2{
+   font-size: 2rem;
+}
+.hx1{
+   font-size: 2rem;
+   font-weight: 400;
+   width: 100%;
+}
+.section_title{
+   font-size: 2rem;
+}
+
+
+}
+/* Small devices (≥576px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  
+}
+
+/* Medium devices – Tablets (≥768px) */
+@media (min-width: 768px) {
+  
+}
+
+/* Large devices – Laptops (≥992px) */
+@media (min-width: 992px) {
+  
+}
+
+/* Extra large devices – Desktops (≥1200px) */
+@media (min-width: 1200px) {
+  
 }

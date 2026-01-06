@@ -35,7 +35,7 @@
 		<header>
 			<nav class="navbar">
 				<div class="navbar_links">
-					<div class="logo_link"><a href="">DRMS</a></div>
+					<div class="logo_link"><a href="">Xprodata</a></div>
 					<ul class="links">
 						<li class="link" aria-details="Home navbar link">
 							<a href="#Home">Home</a>
@@ -68,7 +68,7 @@
 			<div class="sidebar_wrap">
 				<!-- Header -->
 				<div class="sidebar-header">
-					<a href="#" class="sidebar_link">DRMS</a>
+					<a href="#" class="sidebar_link">Xprodata</a>
 					<span class="close-sidebar">
 						<i class="fa-solid fa-xmark"></i>
 					</span>
@@ -102,16 +102,16 @@
 			<!--start of hero section -->
 
 			<section class="hero_section">
-				<div class="content">
+				<div class="hero-content">
 					<h2 class="title animate toLeft">
 						Manage Your <em>Data Securely</em>
 					</h2>
-					<p class="tagline animate toBottom">
+					<p class="tagline_description animate toBottom">
 						Streamline your digital records management with our efficient and
 						user-friendly system.
 					</p>
 					<div class="ctn_wrapper animate toBottom">
-						<button class="ctn">Get Started</button>
+						<button class="ctn"><a href="frontend/pages/login.html">Get Started</a></button>
 					</div>
 				</div>
 				<div class="image_wrap animate toBottom">
@@ -124,7 +124,7 @@
 				<div class="section_container">
 					<div class="features_header">
 						<h2 class="section_title animate toLeft">Key Features</h2>
-						<p class="section_subtitle animate toLeft">
+						<p class="tagline_description animate toLeft">
 							Discover the powerful features that make our Digital Records
 							Management System the ideal solution for your organization.
 						</p>
@@ -188,7 +188,7 @@
 				<div class="section_container">
 					<div class="how_it_works_header">
 						<h2 class="section_title hx2">How It Works</h2>
-						<p class="section_subtitle">
+						<p class="tagline_description">
 							Understand the simple steps to effectively manage your digital
 							records with our system.
 						</p>
@@ -240,18 +240,21 @@
 							<img src="frontend/public/0007.jpg" alt="features image" />
 						</div>
 					</div>
+					<div class="ctn_wrapper animate toBottom">
+						<button class="ctn"><a href="frontend/pages/login.html">Get Started</a></button>
+					</div>
 				</div>
 			</section>
 			<!--end of how it works -->
 			<!--start of Benefits Section -->
-			<section class="benefits_section section">
+			<section class="benefits_section">
 				<div class="centering_wrapper">
 					<div class="section_container margin-top">
 						<div class="benefits_header">
 							<h2 class="section_title animate toLeft hx3">
 								Benefits of Using DRMS
 							</h2>
-							<p class="section_subtitle animate toLeft">
+							<p class="tagline_description animate toLeft">
 								Experience the numerous advantages of implementing our Digital
 								Records Management System in your organization.
 							</p>
@@ -274,10 +277,10 @@
 										</p>
 									</div>
 								</div>
-								<img src="frontend/public/002.jpg" alt="benefit image" />
+								<div><img src="frontend/public/002.jpg" alt="benefit image" /></div>
 							</div>
 							<div class="benefit-image animate toBottom">
-								<img src="frontend/public/003.jpg" alt="benefit image" />
+								<div><img src="frontend/public/003.jpg" alt="benefit image" /></div>
 								<div class="benefits_grid">
 									<div class="benefit_card animate toLeft">
 										<h3 class="benefit_title">Cost Savings</h3>
@@ -308,12 +311,12 @@
 						<h2 class="section_title animate toLeft hx2">
 							Security & Compliance
 						</h2>
-						<p class="section_subtitle animate toLeft">
+						<p class="tagline_description animate toLeft">
 							Our Digital Records Management System is designed with top-notch
 							security features and compliance measures to protect your data.
 						</p>
 					</div>
-					<div class="security_content_wrap">
+					<div class="security_content_wrap section_container">
 						<div class="security_image_wrap animate toBottom">
 							<img src="frontend/public/005.png" alt="security image" />
 						</div>
@@ -356,8 +359,9 @@
 						experience the difference.
 					</p>
 					<div class="banner_ctn_wrapper animate toBottom">
-						<button class="banner_ctn ctn">Get Started Now</button>
+						<button class="banner_ctn ctn"><a href="frontend/pages/login.html">Get Started Now</a></button>
 					</div>
+					
 				</div>
 			</section>
 			<!--end of banner -->
@@ -367,7 +371,7 @@
 				<div class="section_container success_stories_container">
 					<div class="success_stories_header">
 						<h2 class="section_title animate toLeft hx2">Success Stories</h2>
-						<p class="section_subtitle animate toLeft">
+						<p class="tagline_description animate toLeft">
 							Read about how our Digital Records Management System has helped
 							organizations like yours achieve their records management goals.
 						</p>
@@ -415,7 +419,7 @@
 						<h2 class="section_subtitle hx1">
 							Ready to Transform Your Record Management?
 						</h2>
-						<p>
+						<p class="tagline_description">
 							Start your free trial today or get in touch with our team to learn
 							more.
 						</p>
@@ -436,7 +440,7 @@
 										type="text"
 										class="input_field"
 										name="firstName"
-										placeholder="Enter your first name"
+										placeholder="eg. lomoro"
 									/>
 								</div>
 								<div class="input_controls">
@@ -445,7 +449,7 @@
 										type="text"
 										class="input_field"
 										name="lastName"
-										placeholder="Enter your last name"
+										placeholder="eg. stephen"
 									/>
 								</div>
 								<div class="input_controls">
@@ -454,17 +458,28 @@
 										type="email"
 										class="input_field"
 										name="email"
-										placeholder="Enter your email"
+										placeholder="lomoroemail@gmail.com"
 									/>
 								</div>
 								<div class="input_controls">
-									<label for="phone">Phone Number</label>
-									<input
+									<div class="group_fields">
+										<div class="field">
+											<label for="code">Code</label>
+											<select name="country_code" id="code">
+											<option value="ug">+256</option>
+											<option value="ssd">+211</option>
+										</select>
+										</div>
+										<div class="field">
+											<label for="phone">Phone Number</label>
+											<input
 										type="tel"
 										class="input_field"
 										name="phone"
-										placeholder="Enter your phone number"
+										placeholder="eg. 788788788"
 									/>
+										</div>
+									</div>
 								</div>
 								<div class="input_controls">
 									<label for="message">Message</label>

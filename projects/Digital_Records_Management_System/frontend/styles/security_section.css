@@ -19,8 +19,46 @@
 
 .security_item{
     color: #616060;
+    font-size: 18px;
 }
 .security_item strong{
     font-weight: 400;
     color: rgb(0, 69, 69);
+}
+
+
+
+
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+/* Small devices (≥576px) */
+@media (max-width: 576px) {
+    .security_section{
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+  .security_content_wrap{
+    flex-direction: column;
+}
+
+}
+/* Small devices (≥576px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  
+}
+
+/* Medium devices – Tablets (≥768px) */
+@media (min-width: 768px) {
+  
+}
+
+/* Large devices – Laptops (≥992px) */
+@media (min-width: 992px) {
+  
+}
+
+/* Extra large devices – Desktops (≥1200px) */
+@media (min-width: 1200px) {
+  
 }

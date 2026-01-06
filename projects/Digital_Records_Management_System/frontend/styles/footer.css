@@ -25,3 +25,43 @@
     align-items: center;
     height: inherit;
 }
+
+
+
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+/* Small devices (≥576px) */
+@media (max-width: 576px) {
+.footer_section{
+    height: fit-content;
+}
+.footer_flex{
+    flex-direction: column;
+    height: fit-content;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1.5rem;
+}
+
+}
+/* Small devices (≥576px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  
+}
+
+/* Medium devices – Tablets (≥768px) */
+@media (min-width: 768px) {
+  
+}
+
+/* Large devices – Laptops (≥992px) */
+@media (min-width: 992px) {
+  
+}
+
+/* Extra large devices – Desktops (≥1200px) */
+@media (min-width: 1200px) {
+  
+}
