@@ -1,0 +1,159 @@
+
+.main_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    background-color: var(--color-surface);
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 1.2rem;
+    background-color: rgb(255, 255, 255);
+}
+.main_wrap{
+    width: 84%;
+    left: 16%;
+    position: relative;
+}
+
+.main_sidebar{
+    width: 16%;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid #d4d4d4;
+    background-color: rgb(255, 255, 255);
+}
+.main_section{
+    padding: 4rem 2rem;
+    background-color: var(--color-surface);
+}
+.form_wrap{
+    width: 60%;
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form_header{
+    margin-bottom: 2rem;
+}
+.input_field{
+    width: 100%;
+    padding: 18px;
+    border-width: 2px;
+    border-color: rgb(135, 135, 135);
+    border-radius: 5px;
+    background: transparent;
+}
+.main{
+    padding: 0;
+    background: red;
+}
+
+.add_btn{
+    width: 100%;
+    padding: 1.2rem;
+}
+
+.add_btn{
+   width: 100%;
+   padding: 0.8rem;
+	border: 1px solid var(--btn-bg);
+   background:rgb(0, 74, 74);
+	border-radius: 5px;
+	margin-top: 0.5rem;
+	color:  rgb(253, 253, 253);
+	cursor: pointer;
+	transition: 0.5s ease all;
+    font-size: 18px;
+
+   &:hover{
+      background-color: #003f4f;
+      color: #d6d6d6;
+   }
+}
+
+
+.wrap{
+    margin-top: 2rem;
+    text-align: center;
+    
+}
+.wrap a{
+    color: #525252;
+}
+label{
+    color: #525252;
+}
+.wrap a em{
+    color: #00928b;
+}
+
+.sidebar_nav ul{
+    display: flex;
+    flex-direction: column;
+    padding:2rem;
+    list-style: none;
+    gap: 1.2rem;
+}
+.sidebar_nav ul li a{
+    color: #525252;
+    font-size: 18px;
+}
+
+
+
+
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+/* Small devices (≥576px) */
+@media (max-width: 576px) {
+  .contact_section{
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+.section_grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+}
+.form_wrap{
+    width: 98%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-top: 2rem;
+}
+.input_controls{
+    margin-bottom: 1.2rem;
+}
+
+
+}
+/* Small devices (≥576px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  
+}
+
+/* Medium devices – Tablets (≥768px) */
+@media (min-width: 768px) {
+  
+}
+
+/* Large devices – Laptops (≥992px) */
+@media (min-width: 992px) {
+  
+}
+
+/* Extra large devices – Desktops (≥1200px) */
+@media (min-width: 1200px) {
+  
+}
