@@ -51,24 +51,24 @@ echo $apple->get_name();
 // there are two ways to change the values of the properties
 // (1) inside the class(by adding a set method eg set_name() and using $this)
 
-class car {
+class car1{
     public $color;
     public $name;
     function set_name($name){
         $this->name =$name;
     }
 }
-$bmw =new car();
+$bmw =new car1();
 $bmw->set_name("BMW");
 echo $bmw->name;
 
 
 //(2) Outside the class (by directly changing the property value)
-class cars {
+class cars2 {
     public $color;
     public $name;
 }
-$bmw =new car();
+$bmw =new cars2();
 $bmw->name = "BMW";
 echo $bmw->name;
 ?>

@@ -1,3 +1,9 @@
+
+<?php
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -126,38 +132,42 @@
             </div>
           </nav>
         </header>
+
         <section class="main_section">
-          <div class="form_header">
-            <h2 class="section_title">Add Category</h2>
-            <button class="ctn">
-              <a href="categories.html">View categories</a>
-            </button>
+          <div class="form_container">
+            <div class="form_header">
+              <h2 class="page_title">Add Category</h2>
+              <button class="ctn">
+                <a href="categories.html">View categories</a>
+              </button>
+            </div>
+            <div class="form_wrap">
+              <form action="../../../backend/classes/category.php">
+                <div class="input_controls">
+                  <label for="CategoryName">Category Name</label>
+                  <input
+                    type="text"
+                    class="input_field"
+                    name="CategoryName"
+                    placeholder="eg. edibles"
+                  />
+                </div>
+                <div class="input_controls">
+                  <label for="description">Description</label>
+                  <input
+                    type="text"
+                    class="input_field"
+                    name="description"
+                    placeholder="eg. small description about the category"
+                  />
+                </div>
+                <div class="wrap">
+                  <button class="add_btn">Save category</button>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="form_wrap">
-            <form action="">
-              <div class="input_controls">
-                <label for="CategoryName">Category Name</label>
-                <input
-                  type="text"
-                  class="input_field"
-                  name="CategoryName"
-                  placeholder="eg. edibles"
-                />
-              </div>
-              <div class="input_controls">
-                <label for="description">Description</label>
-                <input
-                  type="text"
-                  class="input_field"
-                  name="description"
-                  placeholder="eg. small description about the category"
-                />
-              </div>
-              <div class="wrap">
-                <button class="add_btn">Save category</button>
-              </div>
-            </form>
-          </div>
+          <div class="right-content-container"></div>
         </section>
       </section>
     </div>

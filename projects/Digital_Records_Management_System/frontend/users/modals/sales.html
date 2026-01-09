@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stock out Page</title>
+    <title>Sales in Page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,7 +51,7 @@
                 <span>Products</span>
               </button>
               <ul class="dropdown-menu">
-                <li><a href="add_products.html">Add Product</a></li>
+                <li><a href="add_product.html">Add Product</a></li>
                 <li><a href="view_products.html">View Products</a></li>
               </ul>
             </li>
@@ -84,7 +84,7 @@
                 <span>Income</span>
               </button>
               <ul class="dropdown-menu">
-                <li><a href="sales.html">Add Income</a></li>
+                <li><a href="sales.html">Add sales</a></li>
                 <li><a href="view_income.html">View Income</a></li>
               </ul>
             </li>
@@ -130,7 +130,7 @@
         <section class="main_section">
           <div class="form_container">
             <div class="form_header">
-              <h2 class="page_title">Stocks Out</h2>
+              <h2 class="page_title">sales page</h2>
               <button class="ctn">
                 <a href="categories.html">View Products</a>
               </button>
@@ -162,6 +162,26 @@
                     name="ProductQty"
                     placeholder="eg. 10"
                   />
+                </div>
+                <div class="group_input">
+                  <div class="input_controls">
+                    <label for="unit_price">unit price</label>
+                    <input
+                      type="text"
+                      class="input_field"
+                      name="unit_price"
+                      placeholder="eg. 3000000"
+                    />
+                  </div>
+                  <div class="input_controls">
+                    <label for="Total_price">Total price</label>
+                    <input
+                      type="text"
+                      class="input_field"
+                      name="Total_price"
+                      disabled
+                    />
+                  </div>
                 </div>
                 <div class="input_controls">
                   <label for="description">Description</label>

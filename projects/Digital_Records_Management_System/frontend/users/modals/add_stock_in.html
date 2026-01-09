@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales in Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="../../styles/utils.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <aside class="main_sidebar">
+        <nav class="sidebar-nav">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="dashboard.html">
+                <i class="fa-solid fa-grip"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+
+            <li class="menu-item has-dropdown">
+              <button class="dropdown-toggle">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Categories</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="add_category.html">Add Category</a></li>
+                <li><a href="view_categories.html">View Categories</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown">
+              <button class="dropdown-toggle">
+                <i class="fa-brands fa-product-hunt"></i>
+                <span>Products</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="add_product.html">Add Product</a></li>
+                <li><a href="view_products.html">View Products</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown">
+              <button class="dropdown-toggle">
+                <i class="fa-solid fa-cubes"></i>
+                <span>Stock In</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="add_stock_in.html">Add Stock In</a></li>
+                <li><a href="view_stock_in.html">View Stock In</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown">
+              <button class="dropdown-toggle">
+                <i class="fa-solid fa-arrow-trend-down"></i>
+                <span>Stock Out</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="add_stock_out.html">Add Stock Out</a></li>
+                <li><a href="view_stock_out.html">View Stock Out</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown">
+              <button class="dropdown-toggle">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <span>Income</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="sales.html">Add sales</a></li>
+                <li><a href="view_income.html">View Income</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown">
+              <button class="dropdown-toggle">
+                <i class="fa-regular fa-credit-card"></i>
+                <span>Expenditure</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="add_expenditure.html">Add Expenditure</a></li>
+                <li><a href="view_expenditure.html">View Expenditure</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item has-dropdown">
+              <button class="dropdown-toggle">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="general_settings.html">General Settings</a></li>
+                <li><a href="account_settings.html">Account Settings</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main_wrap">
+        <div class="main_content_container"></div>
+        <header>
+          <nav class="topbar">
+            <div class="logo">
+              <h4>Xprodata</h4>
+            </div>
+            <div class="profile">
+              <span class="username">Hi, Steven!</span>
+              <img src="../../assets/images/user.png" />
+            </div>
+          </nav>
+        </header>
+        <section class="main_section">
+          <div class="form_container">
+            <div class="form_header">
+              <h2 class="page_title">Stocks in</h2>
+              <button class="ctn">
+                <a href="categories.html">View Products</a>
+              </button>
+            </div>
+            <div class="form_wrap">
+              <form action="">
+                <div class="input_controls">
+                  <label for="productName">Product Name</label>
+                  <input
+                    type="text"
+                    class="input_field"
+                    name="ProductName"
+                    placeholder="eg. edibles"
+                  />
+                </div>
+                <div class="input_controls">
+                  <label for="productCategory">Product Category</label>
+                  <select name="productCategory" id="select">
+                    <option value="">Food items</option>
+                    <option value="">Chemicals items</option>
+                    <option value="">entertainment</option>
+                  </select>
+                </div>
+                <div class="input_controls">
+                  <label for="productQty">Product Quantity</label>
+                  <input
+                    type="number"
+                    class="input_field"
+                    name="ProductQty"
+                    placeholder="eg. 10"
+                  />
+                </div>
+                <div class="input_controls">
+                  <label for="description">Description</label>
+                  <textarea
+                    type="text"
+                    class="textarea"
+                    name="description"
+                    placeholder="eg. small description about the category"
+                  ></textarea>
+                </div>
+                <div class="wrap">
+                  <button class="add_btn">Save Product</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="right-content-container"></div>
+        </section>
+      </main>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
